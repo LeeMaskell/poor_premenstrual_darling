@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Reenie Beanie';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/reeniebeanie/v11/z7NSdR76eDkaJKZJFkkjuvWxXPq1q6Gjb_0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Schoolbell';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/schoolbell/v11/92zQtBZWOrcgoe-fgnJIZxUa60ZpbiU.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+  /* header */
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Reenie Beanie";
+    font-size: 2rem;
+    padding: 2rem;
+    clear: right;
+}
+
+ul li a:hover {
+    color: hsl(355, 100%, 40%, 0.8);
+    text-decoration: underline;
+}
+
+/* banner */
+#banner {
+    width: 100%;
+    display: flex; 
+    margin: 0;
+}
+
+#banner-image {
+    width: 100%;
+    box-shadow: 0 0 10px #000000;
+}
+
+#banner-image2 {
+    width: 100%;
+    box-shadow: 0 0 10px #000000;
+    display: none;
+}
+
+/* footer */
+footer {
+    font-family: "Reenie Beanie";
+    font-size: 6rem;
+    color: black; 
+    text-align: center;
+}
+
+footer p {
+    margin: 1.5rem;
+}
+
+#homelogo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4.5rem;
+}
+
+#homelogo .fa-facebook {
+    color: blue;
+}
+
+#homelogo .fa-instagram {
+    color: black;
+}
+
+/* about */
+h1 {
+    font-family: "Schoolbell";
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    width: 100%;
+}
+
+.other {
+    font-family: "Schoolbell";
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+.background {
+    background-color: black;
+}
+
+#aboutlist {
+    text-decoration: none;
+    color: white;
+    font-family: "Reenie Beanie";
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+#aboutlist:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+}
+
+/* Music */
+span {
+    display: flex;
+    justify-content: center;
+}
+
+#album-cover {
+    display: flex;
+    justify-content: center;
+}
+
+#cover-image {
+    box-shadow: 0 0 10px white;
+}
+
+.fa-soundcloud {
+    color: orangered;
+}
+
+.fa-instagram {
+    color: orangered;
+}
+
+.fa-facebook {
+    color: orangered;
+}
+
+/* responsive */
+@media only screen and (max-width: 540px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    #header {
+        text-align: center;
+        width: 100%;
+        display: none;
+        padding: 0;
+    }
+    li a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0; 
+    }
+    label.notblack {
+        color: white;
+    }
+
+    #toggle:checked + #header {
+        display: block;
+    }
+
+    #banner-image {
+        display: none;
+    }
+    #banner-image2 {
+        display: block;
+    }
+    #cover-image {
+        width: 250px;
+        height: auto;
+    }
+    footer {
+        font-size: 4rem;
+    }
+}
