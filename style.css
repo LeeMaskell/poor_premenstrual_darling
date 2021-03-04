@@ -66,12 +66,14 @@ ul li a:hover {
 /* banner */
 #banner {
     width: 100%;
-    display: flex; 
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
 
 #banner-image {
     width: 100%;
+    max-width: 1400px;
     box-shadow: 0 0 10px #000000;
 }
 
@@ -90,13 +92,18 @@ footer {
 }
 
 footer p {
-    margin: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 #homelogo {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 4.5rem;
+    justify-content: center;
+    
+}
+
+.home {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #homelogo .fa-facebook {
@@ -105,6 +112,14 @@ footer p {
 
 #homelogo .fa-instagram {
     color: black;
+}
+
+.fbook {
+    color: blue;
+}
+
+.igram {
+    color: white;
 }
 
 /* about */
@@ -144,6 +159,7 @@ h1 {
 p {
     text-align: center;
     width: 100%;
+
 }
 
 /* Music */
@@ -206,9 +222,12 @@ span {
     }
     #cover-image {
         width: 250px;
-        height: auto;
+        height: 250px;
     }
     footer {
         font-size: 4rem;
+    }
+    p {
+        margin-left: 0;
     }
 }
